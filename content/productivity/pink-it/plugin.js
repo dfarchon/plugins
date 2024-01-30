@@ -374,7 +374,7 @@ function setTablePinkZoneList() {
 	createTableHeader(tablePinkZoneList, ["twitter", "address", "planet"]);
 	for (let pz of pinkZones) {
 		let tr = document.createElement("tr");
-		let operatorAddress = pz.coords.operator;
+		let operatorAddress = pz.operator;
 		let player = df.getPlayer(operatorAddress);
 		let playerColor = getPlayerColor(operatorAddress);
 		
